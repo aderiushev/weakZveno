@@ -1,0 +1,158 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+body {
+  position: relative;
+  overflow: auto;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(
+    200.96deg,
+    #fedc2a -29.09%,
+    #dd5789 51.77%,
+    #7a2c9e 129.35%
+  );
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.3rem;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: transform ease-in 0.1s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+input {
+  padding: 15px;
+}
+
+.playersList {
+  display: flex;
+  flex-direction: column;
+}
+
+.playersList input + input {
+  margin-top: 10px;
+}
+
+.round, .whoEliminate {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 54px;
+}
+
+.nameLabel {
+  font-size: 50px;
+}
+
+.nameValue {
+  font-weight: bold;
+  color: yellow;
+}
+
+.successButton {
+  background-color: green;
+  color: #fff;
+  font-size: 42px;
+}
+
+.errorButton {
+  background-color: red;
+  color: #fff;
+  font-size: 42px;
+}
+
+.infoButton {
+  background-color: aquamarine;
+  color: #fff;
+  font-size: 42px;
+}
+
+.infoButton_disabled {
+  background-color: gray;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.voteList {
+  display: flex;
+  flex-direction: column;
+}
+
+.voteList label {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
+.voteList label + label {
+  margin-top: 10px;
+}
+
+.voteList input[type="radio"] {
+  width: 32px;
+  height: 32px;
+}
+
+.statsBlock {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.bank {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 42px;
+}
+
+.totalBank {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 32px;
+}
+
+.voteList select {
+  padding: 10px;
+}
+
+.elliminated {
+  color: red;
+  font-weight: bold;
+  font-size: 32px;
+}
